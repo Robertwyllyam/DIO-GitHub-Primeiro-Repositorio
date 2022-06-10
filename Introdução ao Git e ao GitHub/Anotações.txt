@@ -1,3 +1,0 @@
-* Git é uma ferramenta muito importante durante o processo de desenvolvimento.
-
-** O GitHub deixa tudo mais bonitinho :)
