@@ -1,0 +1,110 @@
+body{
+
+    font-family: sans-serif;    
+
+}
+
+.container{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    
+
+    border-radius: 3px;
+    text-align: center;
+    color: #14DDF6FF;
+    height: 400px;
+    width: 450px;
+    background-image: url(./paisagem.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: all .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter:grayscale(.45);
+
+
+
+
+}
+
+.card:hover{
+
+    
+    transform: scale(101%);
+    filter: none;   
+    color: white;
+
+}
+
+.card-wrapper{
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+}
+
+.card-wrapper::before{
+
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 150px;
+    display: block;
+    border: 5px solid white;
+    border-radius:1px ;
+    opacity: 0;
+    transition: .3s;
+
+}
+
+.card-wrapper h2{
+
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: .3s;
+}
+
+.card-wrapper p{
+
+    font-size: 14px;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .3s;
+
+}
+
+.card:hover > .card-wrapper::before{
+
+    height: 300px;
+    width: 400px;
+    opacity: 1;
+
+}
+
+.card:hover > .card-wrapper p{
+
+    opacity: 1;
+    visibility: visible;
+    font-size: 14px;
+
+}
